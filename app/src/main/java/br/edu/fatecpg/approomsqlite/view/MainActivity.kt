@@ -1,5 +1,6 @@
 package br.edu.fatecpg.approomsqlite.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -66,6 +67,11 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Lista", "${it.id} - ${it.firstName} - ${it.lastName}")
                 }
             }
+        }
+
+        binding.btnList.setOnClickListener {
+            val intent = Intent(this, ListaUsuariosActivity::class.java)
+            startActivity(intent)
         }
     }
 }

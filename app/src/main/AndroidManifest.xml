@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppRoomSQLite"
         tools:targetApi="31">
         <activity
+            android:name=".view.ListaUsuariosActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
